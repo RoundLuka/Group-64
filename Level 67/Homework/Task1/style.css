@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#introHeader {
+    font-size: 60px;
+    font-family: Roboto;
+}
+
+#playerScore, #aiScore {
+    font-size: 30px;
+}
+
+
+#newGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+
+    font-size: 30px;
+    font-family: roboto;
+
+    width: 350px;
+    height: 50px;
+    
+    padding: 10px;
+    margin: 30px;
+}
+
+#compChoice {
+    font-size: 30px;
+}
+
+#userInput {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 236, 236);
+    width: 600px;
+    height: 300px;
+
+    padding: 30px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(241, 236, 236);
+    border: none;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    border: 3px dotted black;
+    box-shadow: 0 0 15px rgb(158, 136, 74);
+}
+
+.choice img {
+    width: 200px;
+    height: 200px;
+}
+
+.choice h3 {
+    font-size: 50px;
+    font-family: Roboto;
+
+    position: relative;
+    bottom: 30px;
+}
+
+.userChoice {
+    width: 200px;
+    height: 200px;
+}
