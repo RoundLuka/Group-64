@@ -37,4 +37,3 @@ function Animate() {
     childDiv.style.top = `${poistionY}px`
 }
 
-setInterval(Animate, 5)
