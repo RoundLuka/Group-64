@@ -1,34 +1,49 @@
 import random
 
-print(random.randint(1, 3))
+students = [
+    "ბექა აბულაძე",       
+    "გიო ზაქარაია",                    
+    "ირაკლი ბედოშვილი",       
+    "იოანე ბენდელიანი",        
+    "იოანე მელაძე",        
+    "ლაზარე თიგიშვილი",        
+    "ლუკა ლეფსვერიძე",      
+    "ლუკა მამგუაშვილი",           
+    "ნატალი ოქროპირიძე",       
+    "ნიკა ბაზანდარაშვილი",      
+    "ნიკა დავითაშვილი",                             
+    "საბა თავართქილაძე",       
+    "ტარიელ ბეჟანიშვილი",     
+    "ლუკა შავაძე",                    
+]
 
-# students = [
-#     "გიო ზაქარაია",
-#     "ლაზარე თიგიშვილი",
-#     "ლუკა ლეფსვერიძე",
-#     "ლუკა მამგუაშვილი",
-#     "ლუკა შავაძე",
-#     "გიორგი ჯაშაშვილი",
-#     "ელენე ივეჩიანი",
-#     "ირაკლი ბედოშვილი"
-# ]
+captain1 = ["დემეტრე ხოსროშვილი",]
+captain3 = ["ელენე ივეჩიანი"]
 
-# captain1 = ["ტარიელ ბეჟანიშვილი", "ნიკა დავითაშვილი","ნატალი ოქროპირიძე",  "ნიკოლოზ ნოვიკოვი", "ბექა აბულაძე"]
-# captain3 = ["იოანე მელაძე", "ნიკა კვიციანი", "დემეტრე ხოსროშვილი", "საბა თავართქილაძე", "ვაკო პაკსაძე"]
-
-# captain2 = ["ნიკა ბაზანდარაშვილი"]
-# captain4 = ["იოანე ბენდელიანი"]
-
-
-# random.shuffle(students)
-
-
-# for i in range(4):
-#     if students: captain2.append(students.pop())
-#     if students: captain4.append(students.pop())
+captain2 = ["ვაკო პაკსაძე"]
+captain4 = ["ნიკა კვიციანი",]
 
 
-# print("პირველი გუნდი " + str(captain1))
-# print("მეორე გუნდი " + str(captain2))
-# print("მესამე გუნდი " + str(captain3))
-# print("მეოთხე გუნდი " + str(captain4))
+random.shuffle(students)
+
+
+for i in range(4):
+    captain1.append(students[-1])
+    students.pop()
+
+for i in range(4):
+    captain2.append(students[-1])
+    students.pop()
+    
+for i in range(3):
+    captain3.append(students[-1])
+    students.pop()
+
+for i in range(3):
+    captain4.append(students[-1])
+    students.pop()
+
+print("პირველი გუნდი " + str(captain1))
+print("მეორე გუნდი " + str(captain2))
+print("მესამე გუნდი " + str(captain3))
+print("მეოთხე გუნდი " + str(captain4))
