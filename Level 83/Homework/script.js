@@ -7,3 +7,5 @@ getEmail(myAccount)
 
 
 // as - alias
+
+console.log
