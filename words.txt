@@ -1,1 +1,2 @@
 sibling - დედმამიშვილი
+JSON - JavaScript Object Notation

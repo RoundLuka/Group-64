@@ -1,0 +1,17 @@
+[
+    {
+        "Academy": "GOA",
+        "Students": 1000,
+        "CEO": "Nika Keshelava",
+        "Working": true,
+        "Languages": ["HTML", "CSS", "JS"]
+    },
+    {
+        "Academy": "Unkown",
+        "Students": 3,
+        "CEO": null,
+        "Working": false,
+        "Languages": ["Chiense"]
+    }
+]
+
