@@ -28,9 +28,18 @@
 #     res = res[2].pop()
 #     return res
 
-arr = [5, 4, 32, 5]
+# arr = [5, 4, 32, 5]
 
-double_number = lambda x: x * 2
-doubledArr = list(map(double_number, arr))
+# double_number = lambda x: x * 2
+# doubledArr = list(map(double_number, arr))
 
-print(doubledArr)
+# print(doubledArr)
+
+class Node1():
+    def __init__(self, value, left=None, right=None):
+        self.value = value
+        self.left = left
+        self.right = right
+
+
+new_node = Node1("g", Node1() "g")
