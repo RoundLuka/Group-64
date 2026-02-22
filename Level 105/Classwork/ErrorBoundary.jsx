@@ -3,21 +3,32 @@ import React from "react";
 class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props)
+        
+        this.state = { error: null};
+        this.reset = this.reset.bind(this);
     };
 
-    state = { hasError: false }
-
-    static getDerivedFromStateError() {
-        return {hasError: true}
+    reset () {
+        this.setState({ error: null });
     }
 
-    componentDidCatch (error) {
+    static getDerivedStateFromError(error) {
+        return { error }
+    }
+
+    componentDidCatch (error, errorInfo) {
         console.log(error)
+        console.log(errorInfo.componentStack)
     }
 
     render () {
-        if(state.hasError) {
-            <p>Fallback ui</p>
+        if(this.state.error) {
+            return (
+                <div>
+                    <p>Fallback ui</p>
+                    <button onClick={this.reset}>Reset</button>
+                </div>
+            )
         }
         return this.props.children;
     }
