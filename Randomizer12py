@@ -1,0 +1,26 @@
+import random
+
+students = [					
+    "ლაზარე თიგიშვილი",		
+    "ნიკა კვიციანი",
+    "ნიკა დავითაშვილი",
+    "გიორგი გვრიტიშვილი",
+    
+]
+
+
+captain1 = ["ვაკო პაკსაძე",]
+captain2 = ["ლუკა ლეფსვერიძე",]
+
+random.shuffle(students)
+
+for i in range(2):
+    captain1.append(students[-1])
+    students.pop()
+
+for i in range(2):
+    captain2.append(students[-1])
+    students.pop()
+
+print("პირველი გუნდი " + str(captain1))
+print("მეორე გუნდი " + str(captain2))
